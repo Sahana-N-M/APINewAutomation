@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="29.813" tests="34" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\API Automation\RestAssuredProject\target\test-classes;D:\API Automation\RestAssuredProject\target\classes;C:\Users\sahana.nm\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\sahana.nm\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\sahana.nm\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sahana.nm\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sahana.nm\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sahana.nm\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\sahana.nm\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sahana.nm\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sahana.nm\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\json-schema-validator\5.5.5\json-schema-validator-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\sahana.nm\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\sahana.nm\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\sahana.nm\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\sahana.nm\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\sahana.nm\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sahana.nm\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\sahana.nm\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\sahana.nm\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\sahana.nm\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sahana.nm\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\sahana.nm\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\sahana.nm\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\sahana.nm\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\sahana.nm\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\sahana.nm\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\sahana.nm\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\sahana.nm\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\sahana.nm\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\sahana.nm\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\sahana.nm\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\sahana.nm\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\sahana.nm\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\sahana.nm\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\sahana.nm\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\sahana.nm\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\sahana.nm\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\sahana.nm\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\sahana.nm\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\sahana.nm\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\sahana.nm\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\sahana.nm\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\sahana.nm\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\sahana.nm\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.2.v20240123-0840\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\sahana.nm\AppData\Local\Temp\surefire5771413239062478154\surefirebooter-20250710150246769_3.jar C:\Users\sahana.nm\AppData\Local\Temp\surefire5771413239062478154 2025-07-10T15-02-46_610-jvmRun1 surefire-20250710150246769_1tmp surefire_0-20250710150246769_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\API Automation\RestAssuredProject\target\test-classes;D:\API Automation\RestAssuredProject\target\classes;C:\Users\sahana.nm\.m2\repository\io\rest-assured\rest-assured\5.5.5\rest-assured-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\sahana.nm\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\sahana.nm\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\sahana.nm\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\sahana.nm\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\sahana.nm\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\sahana.nm\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\sahana.nm\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sahana.nm\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\json-path\5.5.5\json-path-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\rest-assured-common\5.5.5\rest-assured-common-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\xml-path\5.5.5\xml-path-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\sahana.nm\.m2\repository\io\rest-assured\json-schema-validator\5.5.5\json-schema-validator-5.5.5.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\sahana.nm\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\sahana.nm\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\sahana.nm\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\sahana.nm\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\sahana.nm\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\sahana.nm\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sahana.nm\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\sahana.nm\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\sahana.nm\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\sahana.nm\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sahana.nm\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\sahana.nm\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\sahana.nm\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\sahana.nm\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\sahana.nm\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\sahana.nm\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\sahana.nm\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\sahana.nm\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\sahana.nm\.m2\repository\com\github\scribejava\scribejava-apis\8.3.3\scribejava-apis-8.3.3.jar;C:\Users\sahana.nm\.m2\repository\com\github\scribejava\scribejava-core\8.3.3\scribejava-core-8.3.3.jar;C:\Users\sahana.nm\.m2\repository\com\github\scribejava\scribejava-java8\8.3.3\scribejava-java8-8.3.3.jar;C:\Users\sahana.nm\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.0\jackson-databind-2.14.0.jar;C:\Users\sahana.nm\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.0\jackson-annotations-2.14.0.jar;C:\Users\sahana.nm\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.0\jackson-core-2.14.0.jar;C:\Users\sahana.nm\.m2\repository\com\aventstack\extentreports\5.1.2\extentreports-5.1.2.jar;C:\Users\sahana.nm\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\sahana.nm\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\sahana.nm\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\sahana.nm\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\sahana.nm\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\sahana.nm\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\sahana.nm\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\sahana.nm\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sahana.nm"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Users\sahana.nm\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.2.v20240123-0840\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\API Automation\RestAssuredProject"/>
+    <property name="style.color" value="always"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\sahana.nm\AppData\Local\Temp\surefire5771413239062478154\surefirebooter-20250710150246769_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="sahana.nm"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.2+13"/>
+    <property name="localRepository" value="C:\Users\sahana.nm\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\sahana.nm\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="user.dir" value="D:\API Automation\RestAssuredProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\sahana.nm\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.2.v20240123-0840\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/sahana.nm/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.2.v20240123-0840/jre/bin/server;C:/Users/sahana.nm/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.2.v20240123-0840/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\sahana.nm\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk-21\bin;D:\apache-maven-3.9.8\bin;C:\Users\sahana.nm\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\sahana.nm\AppData\Roaming\npm;C:\Users\sahana.nm\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testCreateCart" classname="testcases.CartTests" time="4.25">
+    <system-out><![CDATA[{
+    "id": 11,
+    "userId": 1,
+    "date": "2025-07-10",
+    "products": [
+        {
+            "productId": 32,
+            "quantity": 6
+        }
+    ]
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testDeleteCart" classname="testcases.CartTests" time="0.784"/>
+  <testcase name="testGetAllCarts" classname="testcases.CartTests" time="0.696"/>
+  <testcase name="testGetCartById" classname="testcases.CartTests" time="0.73">
+    <system-out><![CDATA[{
+    "id": 1,
+    "userId": 1,
+    "date": "2020-03-02T00:00:00.000Z",
+    "products": [
+        {
+            "productId": 1,
+            "quantity": 4
+        },
+        {
+            "productId": 2,
+            "quantity": 1
+        },
+        {
+            "productId": 3,
+            "quantity": 6
+        }
+    ],
+    "__v": 0
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCartsByDateRange" classname="testcases.CartTests" time="0.871"/>
+  <testcase name="testGetCartsSorted" classname="testcases.CartTests" time="0.895"/>
+  <testcase name="testGetCartsSortedAsc" classname="testcases.CartTests" time="0.819"/>
+  <testcase name="testGetCartsWithLimit" classname="testcases.CartTests" time="0.781"/>
+  <testcase name="testGetUserCart" classname="testcases.CartTests" time="0.836"/>
+  <testcase name="testUpdateCart" classname="testcases.CartTests" time="0.633"/>
+  <testcase name="testInvalidUserLogin" classname="testcases.LoginTests" time="1.656">
+    <system-out><![CDATA[<html>
+  <body>username or password is incorrect</body>
+</html>
+]]></system-out>
+  </testcase>
+  <testcase name="testValidUserLogin" classname="testcases.LoginTests" time="0.879">
+    <system-out><![CDATA[{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsInVzZXIiOiJtb3JfMjMxNCIsImlhdCI6MTc1MjEzOTk4MH0.eneUB5bCfcAazWkqXSEn6eBhRASvm5QZlCxbt5qDdFc"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testAddNewProduct" classname="testcases.ProductDataDrivenTest" time="0.903">
+    <failure message="java.io.FileNotFoundException: .\testdata\product.json (The system cannot find the path specified)" type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: java.io.FileNotFoundException: .\testdata\product.json (The system cannot find the path specified)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:58)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:159)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:809)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:734)
+	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
+	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:949)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.FileNotFoundException: .\testdata\product.json (The system cannot find the path specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:152)
+	at com.fasterxml.jackson.core.TokenStreamFactory._fileInputStream(TokenStreamFactory.java:262)
+	at com.fasterxml.jackson.core.JsonFactory.createParser(JsonFactory.java:1030)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3562)
+	at utils.DataProviders.jsonDataProvider(DataProviders.java:26)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:54)
+	... 30 more
+]]></failure>
+  </testcase>
+  <testcase name="testAddNewProduct" classname="testcases.ProductTests" time="0.716">
+    <system-out><![CDATA[{
+    "id": 21,
+    "title": "Ergonomic Paper Plate",
+    "price": 29.93,
+    "description": "Placeat omnis praesentium pariatur dolorem.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "furniture"
+}
+21
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteProduct" classname="testcases.ProductTests" time="0.722"/>
+  <testcase name="testGetAllCategories" classname="testcases.ProductTests" time="0.679"/>
+  <testcase name="testGetAllProducts" classname="testcases.ProductTests" time="0.662"/>
+  <testcase name="testGetLimitedProducts" classname="testcases.ProductTests" time="0.616">
+    <system-out><![CDATA[[
+    {
+        "id": 1,
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+            "rate": 3.9,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "title": "Mens Casual Premium Slim Fit T-Shirts ",
+        "price": 22.3,
+        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "title": "Mens Cotton Jacket",
+        "price": 55.99,
+        "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetProductsByCategory" classname="testcases.ProductTests" time="0.702">
+    <system-out><![CDATA[[
+    {
+        "id": 9,
+        "title": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+        "price": 64,
+        "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+        "rating": {
+            "rate": 3.3,
+            "count": 203
+        }
+    },
+    {
+        "id": 10,
+        "title": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        "price": 109,
+        "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 2.9,
+            "count": 470
+        }
+    },
+    {
+        "id": 11,
+        "title": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+        "price": 109,
+        "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 319
+        }
+    },
+    {
+        "id": 12,
+        "title": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+        "price": 114,
+        "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 4.8,
+            "count": 400
+        }
+    },
+    {
+        "id": 13,
+        "title": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+        "price": 599,
+        "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 2.9,
+            "count": 250
+        }
+    },
+    {
+        "id": 14,
+        "title": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+        "price": 999.99,
+        "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+        "category": "electronics",
+        "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+        "rating": {
+            "rate": 2.2,
+            "count": 140
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetSingleProductById" classname="testcases.ProductTests" time="0.615">
+    <system-out><![CDATA[{
+    "id": 1,
+    "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+    "price": 109.95,
+    "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": {
+        "rate": 3.9,
+        "count": 120
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetSortedProducts" classname="testcases.ProductTests" time="0.683"/>
+  <testcase name="testGetSortedProductsAsc" classname="testcases.ProductTests" time="0.599"/>
+  <testcase name="testUpdateProduct" classname="testcases.ProductTests" time="0.525">
+    <system-out><![CDATA[{
+    "id": 1,
+    "title": "Incredible Iron Wallet",
+    "price": 57.83,
+    "description": "Illo omnis non.",
+    "image": "https://i.pravatar.cc/100",
+    "category": "furniture"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testCartSchema" classname="testcases.SchemaTests" time="0.693">
+    <failure message="Schema to use cannot be null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at testcases.SchemaTests.testCartSchema(SchemaTests.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="testProductSchema" classname="testcases.SchemaTests" time="0.622">
+    <failure message="Schema to use cannot be null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at testcases.SchemaTests.testProductSchema(SchemaTests.java:25)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="testUserSchema" classname="testcases.SchemaTests" time="0.687">
+    <failure message="Schema to use cannot be null" type="java.lang.IllegalArgumentException"><![CDATA[java.lang.IllegalArgumentException: Schema to use cannot be null
+	at io.restassured.module.jsv.JsonSchemaValidator.validateSchemaIsNotNull(JsonSchemaValidator.java:270)
+	at io.restassured.module.jsv.JsonSchemaValidator.access$300(JsonSchemaValidator.java:75)
+	at io.restassured.module.jsv.JsonSchemaValidator$JsonSchemaValidatorFactory.create(JsonSchemaValidator.java:281)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema(JsonSchemaValidator.java:166)
+	at io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath(JsonSchemaValidator.java:117)
+	at testcases.SchemaTests.testUserSchema(SchemaTests.java:49)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="testCreateUser" classname="testcases.UserTests" time="0.969">
+    <system-out><![CDATA[{
+    "id": 1
+}
+Generated UserID=====:1
+]]></system-out>
+  </testcase>
+  <testcase name="testDeleteUser" classname="testcases.UserTests" time="0.656"/>
+  <testcase name="testGetAllUsers" classname="testcases.UserTests" time="0.853">
+    <system-out><![CDATA[[
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3467",
+                "long": "-20.1310"
+            },
+            "city": "San Antonio",
+            "street": "Hunters Creek Dr",
+            "number": 6454,
+            "zipcode": "98234-1734"
+        },
+        "id": 4,
+        "email": "don@gmail.com",
+        "username": "donero",
+        "password": "ewedon",
+        "name": {
+            "firstname": "don",
+            "lastname": "romer"
+        },
+        "phone": "1-765-789-6734",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-40.1310"
+            },
+            "city": "san Antonio",
+            "street": "adams St",
+            "number": 245,
+            "zipcode": "80796-1234"
+        },
+        "id": 5,
+        "email": "derek@gmail.com",
+        "username": "derek",
+        "password": "jklg*_56",
+        "name": {
+            "firstname": "derek",
+            "lastname": "powell"
+        },
+        "phone": "1-956-001-1945",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "20.1677",
+                "long": "-10.6789"
+            },
+            "city": "el paso",
+            "street": "prospect st",
+            "number": 124,
+            "zipcode": "12346-0456"
+        },
+        "id": 6,
+        "email": "david_r@gmail.com",
+        "username": "david_r",
+        "password": "3478*#54",
+        "name": {
+            "firstname": "david",
+            "lastname": "russell"
+        },
+        "phone": "1-678-345-9856",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "10.3456",
+                "long": "20.6419"
+            },
+            "city": "fresno",
+            "street": "saddle st",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 7,
+        "email": "miriam@gmail.com",
+        "username": "snyder",
+        "password": "f238&@*$",
+        "name": {
+            "firstname": "miriam",
+            "lastname": "snyder"
+        },
+        "phone": "1-123-943-0563",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "50.3456",
+                "long": "10.6419"
+            },
+            "city": "mesa",
+            "street": "vally view ln",
+            "number": 1342,
+            "zipcode": "96378-0245"
+        },
+        "id": 8,
+        "email": "william@gmail.com",
+        "username": "hopkins",
+        "password": "William56$hj",
+        "name": {
+            "firstname": "william",
+            "lastname": "hopkins"
+        },
+        "phone": "1-478-001-0890",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.12456",
+                "long": "20.5419"
+            },
+            "city": "miami",
+            "street": "avondale ave",
+            "number": 345,
+            "zipcode": "96378-0245"
+        },
+        "id": 9,
+        "email": "kate@gmail.com",
+        "username": "kate_h",
+        "password": "kfejk@*_",
+        "name": {
+            "firstname": "kate",
+            "lastname": "hale"
+        },
+        "phone": "1-678-456-1934",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "30.24788",
+                "long": "-20.545419"
+            },
+            "city": "fort wayne",
+            "street": "oak lawn ave",
+            "number": 526,
+            "zipcode": "10256-4532"
+        },
+        "id": 10,
+        "email": "jimmie@gmail.com",
+        "username": "jimmie_k",
+        "password": "klein*#%*",
+        "name": {
+            "firstname": "jimmie",
+            "lastname": "klein"
+        },
+        "phone": "1-104-001-4567",
+        "__v": 0
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserById" classname="testcases.UserTests" time="0.714">
+    <system-out><![CDATA[{
+    "address": {
+        "geolocation": {
+            "lat": "-37.3159",
+            "long": "81.1496"
+        },
+        "city": "kilcoole",
+        "street": "new road",
+        "number": 7682,
+        "zipcode": "12926-3874"
+    },
+    "id": 1,
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+    "name": {
+        "firstname": "john",
+        "lastname": "doe"
+    },
+    "phone": "1-570-236-7033",
+    "__v": 0
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUsersSorted" classname="testcases.UserTests" time="0.736"/>
+  <testcase name="testGetUsersSortedAsc" classname="testcases.UserTests" time="0.675"/>
+  <testcase name="testGetUsersWithLimit" classname="testcases.UserTests" time="0.724">
+    <system-out><![CDATA[[
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "new road",
+            "number": 7682,
+            "zipcode": "12926-3874"
+        },
+        "id": 1,
+        "email": "john@gmail.com",
+        "username": "johnd",
+        "password": "m38rmF$",
+        "name": {
+            "firstname": "john",
+            "lastname": "doe"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "-37.3159",
+                "long": "81.1496"
+            },
+            "city": "kilcoole",
+            "street": "Lovers Ln",
+            "number": 7267,
+            "zipcode": "12926-3874"
+        },
+        "id": 2,
+        "email": "morrison@gmail.com",
+        "username": "mor_2314",
+        "password": "83r5^_",
+        "name": {
+            "firstname": "david",
+            "lastname": "morrison"
+        },
+        "phone": "1-570-236-7033",
+        "__v": 0
+    },
+    {
+        "address": {
+            "geolocation": {
+                "lat": "40.3467",
+                "long": "-30.1310"
+            },
+            "city": "Cullman",
+            "street": "Frances Ct",
+            "number": 86,
+            "zipcode": "29567-1452"
+        },
+        "id": 3,
+        "email": "kevin@gmail.com",
+        "username": "kevinryan",
+        "password": "kev02937@",
+        "name": {
+            "firstname": "kevin",
+            "lastname": "ryan"
+        },
+        "phone": "1-567-094-1345",
+        "__v": 0
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateUser" classname="testcases.UserTests" time="0.614">
+    <system-out><![CDATA[{
+    "email": "elidia.denesik@yahoo.com",
+    "username": "aura.fisher",
+    "password": "btr3be1vd",
+    "name": {
+        "firstname": "Ferne",
+        "lastname": "Tremblay"
+    },
+    "address": {
+        "city": "Reingertown",
+        "street": "Roberts Hill",
+        "number": 26,
+        "zipcode": "85242",
+        "geolocation": {
+            "lat": "-24.713580",
+            "lng": "-20.834448"
+        }
+    },
+    "phone": "(662) 080-7957"
+}
+]]></system-out>
+  </testcase>
+</testsuite>
