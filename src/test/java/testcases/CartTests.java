@@ -44,31 +44,51 @@ public class CartTests extends BaseClass{
 	                 .body("id", equalTo(cartId)); // Validate that the response contains the correct cart ID
 	     }
 	 	 
+//	 	@Test
+//	    public void testGetCartsByDateRange() {
+//	     
+//	    	 String startDate = configReader.getProperty("startdate");
+//	    	 String endDate = configReader.getProperty("enddate");
+//	    	    
+//	        Response response=given()
+//	            .pathParam("startdate", startDate)
+//	            .pathParam("enddate", endDate)
+//	            .when()
+//	                .get(Routes.GET_CARTS_BY_DATE_RANGE)
+//	            .then()
+//	                .statusCode(200)
+//	                .body("size()", greaterThan(0)) // Validate that the response is not empty
+//	                .extract().response();
+//	        
+//	     // Extract the list of cart dates
+//	        List<String> cartDates = response.jsonPath().getList("date");
+//
+//	        // Validate cart dates
+//	        //validateCartDatesWithinRange(cartDates, startDate, endDate);
+//	        
+//	        assertThat(validateCartDatesWithinRange(cartDates, startDate, endDate), is(true));
+//	        
+//	    }
+	 	
 	 	@Test
-	    public void testGetCartsByDateRange() {
-	     
-	    	 String startDate = configReader.getProperty("startdate");
-	    	 String endDate = configReader.getProperty("enddate");
-	    	    
-	        Response response=given()
-	            .pathParam("startdate", startDate)
-	            .pathParam("enddate", endDate)
-	            .when()
-	                .get(Routes.GET_CARTS_BY_DATE_RANGE)
-	            .then()
-	                .statusCode(200)
-	                .body("size()", greaterThan(0)) // Validate that the response is not empty
-	                .extract().response();
-	        
-	     // Extract the list of cart dates
-	        List<String> cartDates = response.jsonPath().getList("date");
+	 	public void testGetCartsByDateRange() {
+	 	    String startDate = configReader.getProperty("startdate");
+	 	    String endDate = configReader.getProperty("enddate");
 
-	        // Validate cart dates
-	        //validateCartDatesWithinRange(cartDates, startDate, endDate);
-	        
-	        assertThat(validateCartDatesWithinRange(cartDates, startDate, endDate), is(true));
-	        
-	    }
+	 	    Response response = given()
+	 	        .queryParam("startdate", startDate)
+	 	        .queryParam("enddate", endDate)
+	 	        .when()
+	 	        .get(Routes.GET_CARTS_BY_DATE_RANGE)
+	 	        .then()
+	 	        .statusCode(200)
+	 	        .body("size()", greaterThan(0))
+	 	        .extract().response();
+
+	 	    List<String> cartDates = response.jsonPath().getList("date");
+	 	    assertThat(validateCartDatesWithinRange(cartDates, startDate, endDate), is(true));
+	 	}
+
 	    
 	    @Test
 	    public void testGetUserCart() {
@@ -84,53 +104,99 @@ public class CartTests extends BaseClass{
 	    }
 	    
 	    
+//	    @Test
+//	    public void testGetCartsWithLimit() {
+//	        int limit = configReader.getIntProperty("limit");
+//	        given()
+//	            .pathParam("limit", limit)
+//	            .when()
+//	                .get(Routes.GET_CARTS_WITH_LIMIT)
+//	            .then()
+//	                .statusCode(200)
+//	                .body("size()", lessThanOrEqualTo(limit)); // Validate that the response size is within the limit
+//	    }
+
 	    @Test
 	    public void testGetCartsWithLimit() {
 	        int limit = configReader.getIntProperty("limit");
+
 	        given()
-	            .pathParam("limit", limit)
+	            .queryParam("limit", limit)
 	            .when()
-	                .get(Routes.GET_CARTS_WITH_LIMIT)
+	            .get(Routes.GET_CARTS_WITH_LIMIT)
 	            .then()
-	                .statusCode(200)
-	                .body("size()", lessThanOrEqualTo(limit)); // Validate that the response size is within the limit
+	            .statusCode(200)
+	            .body("size()", lessThanOrEqualTo(limit)); // Validate that the response size is within the limit
 	    }
 
+	    
+//	    @Test
+//	    public void testGetCartsSorted() {
+//	    	Response response = given()
+//	            .pathParam("order", "desc")
+//	            .when()
+//	                .get(Routes.GET_CARTS_SORTED)
+//	            .then()
+//	                .statusCode(200)
+//	                .body("size()", greaterThan(0)) // Validate that the response is not empty
+//	                .extract().response();
+//	         
+//	         // Parse response to get product IDs
+//	         List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+//
+//	         // Validate IDs are sorted in ascending  order(calling helper method)
+//	         assertThat(isSortedDesceding(cartIds), is(true));
+//	    }  
+	    
 	    @Test
 	    public void testGetCartsSorted() {
-	    	Response response = given()
-	            .pathParam("order", "desc")
+	        Response response = given()
+	            .queryParam("sort", "desc")
 	            .when()
-	                .get(Routes.GET_CARTS_SORTED)
+	            .get(Routes.GET_CARTS_SORTED)
 	            .then()
-	                .statusCode(200)
-	                .body("size()", greaterThan(0)) // Validate that the response is not empty
-	                .extract().response();
-	         
-	         // Parse response to get product IDs
-	         List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+	            .statusCode(200)
+	            .body("size()", greaterThan(0)) // Validate that the response is not empty
+	            .extract().response();
 
-	         // Validate IDs are sorted in ascending  order(calling helper method)
-	         assertThat(isSortedDesceding(cartIds), is(true));
-	    }  
+	        List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+	        assertThat(isSortedDesceding(cartIds), is(true));
+	    }
+
+	    
+//	    @Test
+//	    public void testGetCartsSortedAsc() {
+//	    	Response response = given()
+//	            .pathParam("order", "asc")
+//	            .when()
+//	                .get(Routes.GET_CARTS_SORTED)
+//	            .then()
+//	                .statusCode(200)
+//	                .body("size()", greaterThan(0)) // Validate that the response is not empty
+//	                .extract().response();
+//	         
+//	         // Parse response to get product IDs
+//	         List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+//
+//	         // Validate IDs are sorted in ascending  order(calling helper method)
+//	         assertThat(isSortedAsceding(cartIds), is(true));
+//	    } 
 	    
 	    @Test
 	    public void testGetCartsSortedAsc() {
-	    	Response response = given()
-	            .pathParam("order", "asc")
+	        Response response = given()
+	            .queryParam("sort", "asc")
 	            .when()
-	                .get(Routes.GET_CARTS_SORTED)
+	            .get(Routes.GET_CARTS_SORTED)
 	            .then()
-	                .statusCode(200)
-	                .body("size()", greaterThan(0)) // Validate that the response is not empty
-	                .extract().response();
-	         
-	         // Parse response to get product IDs
-	         List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+	            .statusCode(200)
+	            .body("size()", greaterThan(0)) // Validate that the response is not empty
+	            .extract().response();
 
-	         // Validate IDs are sorted in ascending  order(calling helper method)
-	         assertThat(isSortedAsceding(cartIds), is(true));
-	    }  
+	        List<Integer> cartIds = response.jsonPath().getList("id", Integer.class);
+	        assertThat(isSortedAsceding(cartIds), is(true));
+	    }
+
 	    
 	    @Test
 	    public void testCreateCart() {
