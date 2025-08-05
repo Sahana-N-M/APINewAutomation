@@ -18,7 +18,7 @@ import pojo.User;
 import routes.Routes;
 
 
-public class UserTestss extends BaseClass
+public class UserTests extends BaseClass
 {
 
 	//1) Fetch all the users   in the DB
