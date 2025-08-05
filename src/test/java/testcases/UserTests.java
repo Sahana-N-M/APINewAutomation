@@ -18,10 +18,10 @@ import pojo.User;
 import routes.Routes;
 
 
-public class UserTests extends BaseClass
+public class UserTestss extends BaseClass
 {
 
-	//1) Fetch all the users
+	//1) Fetch all the users   in the DB
 	@Test
 	public void testGetAllUsers()
 	{
@@ -105,7 +105,8 @@ public class UserTests extends BaseClass
 	
 	
 	
-	//6) Test to create a new user
+	//6) Test to create a new user 
+	//6
 	
 	@Test
 	public void testCreateUser()
