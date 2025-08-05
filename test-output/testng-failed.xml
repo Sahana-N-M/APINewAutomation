@@ -4,16 +4,44 @@
   <listeners>
     <listener class-name="utils.ExtentReporter"/>
   </listeners>
-  <test thread-count="5" parallel="tests" name="Product Tests(failed)">
+  <test thread-count="5" parallel="tests" name="login Tests(failed)">
     <classes>
-      <class name="testcases.SchemaTests">
+      <class name="testcases.LoginTests">
         <methods>
-          <include name="testCartSchema"/>
-          <include name="testProductSchema"/>
-          <include name="testUserSchema"/>
+          <include name="testValidUserLogin"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testcases.SchemaTests -->
+      </class> <!-- testcases.LoginTests -->
+    </classes>
+  </test> <!-- login Tests(failed) -->
+  <test thread-count="5" parallel="tests" name="User Tests(failed)">
+    <classes>
+      <class name="testcases.UserTests">
+        <methods>
+          <include name="testCreateUser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.UserTests -->
+    </classes>
+  </test> <!-- User Tests(failed) -->
+  <test thread-count="5" parallel="tests" name="Product Tests(failed)">
+    <classes>
+      <class name="testcases.ProductTests">
+        <methods>
+          <include name="testAddNewProduct"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.ProductTests -->
     </classes>
   </test> <!-- Product Tests(failed) -->
+  <test thread-count="5" parallel="tests" name="cart Tests(failed)">
+    <classes>
+      <class name="testcases.CartTests">
+        <methods>
+          <include name="testCreateCart"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.CartTests -->
+    </classes>
+  </test> <!-- cart Tests(failed) -->
 </suite> <!-- Failed suite [API TestSuite] -->

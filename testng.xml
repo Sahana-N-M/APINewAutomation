@@ -7,16 +7,32 @@
   	<listener class-name="utils.ExtentReporter" />
   </listeners>
   
-  <test name="Product Tests">
+  <test name="User Tests">
     <classes>
       <class name="testcases.UserTests"/>
     </classes>
   </test>
   
+  <test name="cart Tests">
+    <classes>
+      <class name="testcases.CartTests"/>
+    </classes>
+  </test>
+  
+  <test name="login Tests">
+    <classes>
+      <class name="testcases.LoginTests"/>
+    </classes>
+  </test>
+  
+  
+  
+   <test name="Product Tests">
+    <classes>
+      <class name="testcases.ProductTests"/>
+    </classes>
+  </test>
+  
  
-  
-  
-  
-  
   
 </suite>

@@ -3,6 +3,12 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
+      <class name="testcases.ProductDataDrivenTest">
+        <methods>
+          <include name="testAddNewProduct"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.ProductDataDrivenTest -->
       <class name="testcases.SchemaTests">
         <methods>
           <include name="testCartSchema"/>
@@ -11,12 +17,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.SchemaTests -->
-      <class name="testcases.ProductDataDrivenTest">
-        <methods>
-          <include name="testAddNewProduct"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testcases.ProductDataDrivenTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->
